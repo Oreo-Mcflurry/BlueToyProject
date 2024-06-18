@@ -18,7 +18,7 @@ struct ContentView: View {
             
             List(bluetoothManger.discoveredPeripherals, id: \.identifier) { item in
                 Button {
-                    
+                    bluetoothManger.connectToPeripheral(item)
                 } label: {
                     Text(item.name ?? item.identifier.uuidString)
                 }

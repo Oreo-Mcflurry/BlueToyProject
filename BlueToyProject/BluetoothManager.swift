@@ -60,6 +60,7 @@ extension BluetoothManager: CBCentralManagerDelegate {
         connectedPeripheral = peripheral
         peripheral.delegate = self
         peripheral.discoverServices(nil)
+        print(peripheral)
     }
 
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
@@ -75,9 +76,13 @@ extension BluetoothManager: CBCentralManagerDelegate {
     private func startScanning() {
         centralManager.scanForPeripherals(withServices: nil, options: nil)
     }
-
+    
     private func stopScanning() {
         centralManager.stopScan()
+    }
+    
+    func connectToPeripheral(_ peripheral: CBPeripheral) {
+        centralManager.connect(peripheral, options: nil)
     }
 }
 
@@ -101,7 +106,7 @@ extension BluetoothManager: CBPeripheralDelegate {
 
     func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         if let value = characteristic.value {
-            print("Updated value for characteristic \(characteristic.uuid): \(value)")
+            print(value.base64EncodedData())
         }
     }
 
