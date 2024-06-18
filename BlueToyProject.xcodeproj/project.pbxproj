@@ -11,6 +11,7 @@
 		0BCA2BDC2C21457E00DD16F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA2BDB2C21457E00DD16F3 /* ContentView.swift */; };
 		0BCA2BDE2C21458000DD16F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BCA2BDD2C21458000DD16F3 /* Assets.xcassets */; };
 		0BCA2BE12C21458000DD16F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BCA2BE02C21458000DD16F3 /* Preview Assets.xcassets */; };
+		0BCA2BE82C21464A00DD16F3 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA2BE72C21464A00DD16F3 /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		0BCA2BDB2C21457E00DD16F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BCA2BDD2C21458000DD16F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BCA2BE02C21458000DD16F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BCA2BE72C21464A00DD16F3 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		0BCA2BE92C21490300DD16F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		0BCA2BD82C21457E00DD16F3 /* BlueToyProject */ = {
 			isa = PBXGroup;
 			children = (
+				0BCA2BE92C21490300DD16F3 /* Info.plist */,
 				0BCA2BD92C21457E00DD16F3 /* BlueToyProjectApp.swift */,
 				0BCA2BDB2C21457E00DD16F3 /* ContentView.swift */,
+				0BCA2BE72C21464A00DD16F3 /* BluetoothManager.swift */,
 				0BCA2BDD2C21458000DD16F3 /* Assets.xcassets */,
 				0BCA2BDF2C21458000DD16F3 /* Preview Content */,
 			);
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BCA2BDC2C21457E00DD16F3 /* ContentView.swift in Sources */,
+				0BCA2BE82C21464A00DD16F3 /* BluetoothManager.swift in Sources */,
 				0BCA2BDA2C21457E00DD16F3 /* BlueToyProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +281,9 @@
 				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueToyProject/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = Test;
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = Test;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +313,9 @@
 				DEVELOPMENT_TEAM = Y7F2ZW9QG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueToyProject/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = Test;
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = Test;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
