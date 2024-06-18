@@ -9,8 +9,7 @@ import Foundation
 import CoreBluetooth
 
 final class BluetoothManager: NSObject, ObservableObject {
-    static let shared = BluetoothManager.init()
-    private override init() { 
+    override init() {
         super.init()
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
     }
